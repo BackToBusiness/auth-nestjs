@@ -1,7 +1,7 @@
 import { Controller, Get, Post, UseGuards, Request, ClassSerializerInterceptor, UseInterceptors } from '@nestjs/common';
 import { User } from './user.entity';
 import { UsersService } from './users.service';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { JwtAuthGuard } from 'src/auth/guard/jwt-auth.guard';
 
 @UseInterceptors(ClassSerializerInterceptor)
 @Controller('users')
